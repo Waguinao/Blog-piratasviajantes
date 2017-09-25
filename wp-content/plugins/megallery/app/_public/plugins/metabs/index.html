@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MeTabs</title>
+
+	<link rel="shortcut icon" href="favicon.png"/>
+	<meta name="description" content="MeTabs, Plugin Javascript para divisão de conteúdo com abas">
+	<meta name="keywords" content="MeTabs, Plugin, Javascript, abas">
+	<meta name="robots" content="index, follow"> 
+	<meta name="author" content="Wallace Rio">
+	
+	<meta name="reply-to" content="wallrio@gmail.com">
+
+	<meta property="og:title" content="MeTabs">
+	<meta property="og:image" content="favicon.png">
+	<meta property="og:description" content="eTabs, Plugin Javascript para divisão de conteúdo com abas">
+
+	<link rel="stylesheet" href="default.css">	
+	<link rel="stylesheet" href="metabs/metabs.css">	
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src='metabs/metabs.js'></script>
+
+
+
+</head>
+<body>
+
+<div>
+	<h1>MeTabs</h1>
+	<h4>Divisor de conteúdo em abas</h4>
+	<hr/>
+</div>
+
+<div>	
+	<p>Desenvolvido por: Wallace Rio</p>
+	<hr/>
+</div>
+
+
+<h3>Exemplos:</h3>
+<nav>
+	<ul>
+		<li><a href="example/example1.html" >Aba simples</a></li>
+		<li><a href="example/example2.html">Aba bloqueada</a></li>
+		<li><a href="example/example3.html">Aba lateral</a></li>
+		<li><a href="example/example4.html">Aba automática (slider)</a>
+		</li>
+		<li><a href="example/example5.html">Aba automática (slider com callback ao finalizar)</a>
+		</li>
+		<li><a href="example/example6.html">Aba callback (executa javascript)</a></li>
+		<li><a href="example/example7.html">Aba com controle externo</a></li>
+		<li><a href="example/example8.html">Aba multipla</a></li>
+		<li><a href="example/example9.html">Aba nova animação</a></li>
+		<li><a href="example/example10.html">Aba com controle via hash</a></li>
+		<li><a href="example/example11.html">Carrosel logos</a></li>
+	</ul>
+</nav>
+
+<hr>
+
+<h4>USAGE:</h4>
+
+<div><strong>Requesito:</strong> JQuery é requisito para este plugin</div>
+
+<p>Inclua o CSS e o JS no HEAD, depois apenas inclua a marcação HTML</p>
+
+
+
+
+&lt;link rel="stylesheet" href="metabs/metabs.css"'&gt;<br>
+&lt;script type="text/javascript" src='metabs/metabs.js'&gt;&lt;/script'&gt;
+
+<br><br>
+
+1. Crie uma tag DIV com o parametro <strong>data-metabs</strong>
+<br>
+<textarea class="code" readonly="">
+	<div data-metabs >
+
+	</div>
+</textarea>
+
+<br><br>
+
+2. Crie outra tag DIV com o parametro <strong>data-rel='tabContainer'</strong>, e dentro desta div crie as abas com o parametro <strong>data-rel='metabs_tab'</strong>, e com o parametro <strong>data-for</strong> com um valor único de identificação para o conteúdo da aba, para definir qual aba deverá ficar ativa ao iniciar utilize o parametro <strong>data-state='active'</strong>
+<br>
+<textarea class="code" readonly="">
+	<div data-metabs >
+		<div data-rel='tabContainer'>
+		        <a data-for='formContent1' data-rel='metabs_tab' data-state='active'>Conteúdo 1</a>
+		        <a data-for='formContent2' data-rel='metabs_tab'>Conteúdo 2</a>
+		        <a data-for='formContent3' data-rel='metabs_tab'>Conteúdo 3</a>
+		</div>
+	</div>
+</textarea>
+
+<br><br>
+
+3. Para o conteúdo crie as DIV's relacionadas as abas com os parametros <strong>data-rel='metabs_content'</strong>, <strong>id="formContent1" para cada identificação</strong>
+
+<textarea class="code" readonly="">
+	<div data-metabs >
+		<div data-rel='tabContainer'>
+		        <a data-for='formContent1' data-rel='metabs_tab' data-state='active'>Conteúdo 1</a>
+		        <a data-for='formContent2' data-rel='metabs_tab'>Conteúdo 2</a>
+		        <a data-for='formContent3' data-rel='metabs_tab'>Conteúdo 3</a>
+		</div>
+	</div>
+</textarea>
+<br><br><br><br>
+
+
+<strong>Exemplo:</strong>
+<textarea class="code"  style='width:100%;height:300px' readonly="">
+	<div class='metabs2' data-metabs   >
+					
+		<div data-rel='tabContainer'>
+		        <a data-for='formContent1' data-rel='metabs_tab' data-state='active'>Conteúdo 1</a>
+		        <a data-for='formContent2' data-rel='metabs_tab'>Conteúdo 2</a>
+		        <a data-for='formContent3' data-rel='metabs_tab'>Conteúdo 3</a>
+		</div>
+		
+	        <div id='formContent1' data-rel='metabs_content'  >Conteúdo 1</div>
+	        <div id='formContent2' data-rel='metabs_content'>Conteúdo 2</div>
+	        <div id='formContent3' data-rel='metabs_content'>Conteúdo 3</div>
+		
+	</div>
+</textarea>
+
+<hr>
+
+
+</body>
+</html>

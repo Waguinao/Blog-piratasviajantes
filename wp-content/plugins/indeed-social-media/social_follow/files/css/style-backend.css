@@ -1,0 +1,42 @@
+/******* General Options *********/
+.isf_row_wrapp{
+	margin-top: 20px;
+	font-size: 11px;
+}
+.isf_mini_label_dashboard{
+	font-weight: bold;
+	font-size: 13px;
+}
+.isf_row_wrapp .isf_row_dashboard input{
+	width: 400px;
+}
+.isf_row_dashboard{
+	width: 100%;
+}
+.isf_row_dashboard .isf_inside_row_label{
+	width: 11%;
+	display: inline-block;
+	font-weiget: bold;
+}
+
+.isf-follow-table{
+	margin-bottom: 0px;
+	display: inline-block; 
+	vertical-align: top;
+	width: 32%; 
+	min-width: 225px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.isf-follow-table tbody{
+	display:block;
+}
+.isf-follow-table td{
+    display: inline-block;
+}
+.isf-follow-table input{
+	max-width:100%;
+	width: 100%;
+    display: block;
+    margin: 1px;
+}
