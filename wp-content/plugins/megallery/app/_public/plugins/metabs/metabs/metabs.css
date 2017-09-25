@@ -1,0 +1,331 @@
+/**
+ * [MeTabs] v.1.1
+ * Criar abas e container
+ *
+ * Desenvolvido por: Wallace Rio
+ * wallrio.com
+ * 
+ */
+ 
+.metabs1{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	
+
+	
+}.metabs1  div[data-rel=tabContainer] {	
+	display: table;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}.metabs1  div > a[data-rel=metabs_tab] {
+	display: table-cell;
+	
+	padding: 5px;
+
+	
+	background: #FDB515 ;
+	border: 0px ;
+	margin: 0px ;	
+	box-shadow:none ;
+	border-radius: 0px ;
+	cursor: pointer;
+	text-align: center;
+
+
+}.metabs1  div > a[data-rel=metabs_tab]:first-child{
+	border-radius: 4px 0px 0px 0px;
+
+}.metabs1  div > a[data-rel=metabs_tab]:last-child{
+	border-radius: 0px 0px 0px 4px;	
+}.metabs1  div > a[data-rel=metabs_tab]:hover{
+	background: #455560;
+	color: #FDB515;
+
+}.metabs1  div > a[data-rel=metabs_tab][data-state=active] {
+	background: #f8f8f8;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color:#455560;
+}.metabs1 > [data-state=active] {		
+	display: block;
+}
+.metabs1  [data-rel="metabs_content"]{
+	padding: 0px;
+	display:none;
+}.metabs1  [data-rel='metabs_content'][data-state=active]{
+	display: table;
+	width: 100%
+}
+
+.metabs1  div > a[data-rel=metabs_tab][disabled=disabled]{
+	background: #E1DBC2 !important;
+	color:#877E65;
+}.metabs1  div > a[data-rel=metabs_tab][disabled=disabled]:hover{
+	color:#877E65 !important;
+}
+
+.metabs1 .division{
+padding: 0px;
+	margin: 0px;
+	background: #eee;
+	
+	width: 100%;
+	overflow: hidden ;
+	border:1px solid #FDB515;
+	border-radius: 4px 0px 0px 4px;	
+}
+.metabs1 .division > div{
+
+	
+}.metabs1 .division > div:first-child{	
+	box-shadow: 2px 0 20px 0px rgba(0,0,0,0.7);
+
+}.metabs1 .division > div:last-child{	
+	
+	overflow:hidden;
+	padding: 5px;
+	margin: 0px;
+	
+}
+
+
+
+
+
+
+.metabs2{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	
+
+	
+}.metabs2  div[data-rel=tabContainer] {	
+	display: table;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}.metabs2  div > a[data-rel=metabs_tab] {
+	display: block;
+	/*display: table-row;*/
+	height: 1%;
+	width: 67px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	
+	/*background: #FDB515 ;*/
+	border: 1px solid #999;
+	margin-bottom: 4px;	
+	box-shadow:none ;
+	border-radius: 0px ;
+	cursor: pointer;
+	text-align: center;
+
+	-webkit-transition: all 300ms ease-out;
+-moz-transition: all 300ms ease-out;
+-ms-transition: all 300ms ease-out;
+-o-transition: all 300ms ease-out;
+transition: all 300ms ease-out;
+opacity: 0.5;
+height: 50px;
+background-size: cover !important;
+background-position: center !important;
+}.metabs2  div > a[data-rel=metabs_tab] img{
+	/*width: 100%;*/
+	/*height: 100%;*/
+}.metabs2  div > a[data-rel=metabs_tab]:first-child{
+	border-radius: 4px 0px 0px 0px;
+
+}.metabs2  div > a[data-rel=metabs_tab]:last-child{
+	border-radius: 0px 0px 0px 4px;	
+}.metabs2  div > a[data-rel=metabs_tab]:hover{
+	background: #455560;
+	color: #FDB515;
+}.metabs2  div > a[data-rel=metabs_tab][data-state=active] {
+	background: #fff;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color:#455560;
+	/*border:1px solid red;*/
+	opacity: 1;
+}.metabs2 > [data-state=active] {		
+	display: block;
+}
+.metabs2  [data-rel="metabs_content"]{
+	padding: 0px;
+	display:none;
+}.metabs2  [data-rel='metabs_content'][data-state=active]{
+	display: table;
+	width: 100%
+}
+
+.metabs2  div > a[data-rel=metabs_tab][disabled=disabled]{
+	background: #E1DBC2 !important;
+	color:#877E65;
+}.metabs2  div > a[data-rel=metabs_tab][disabled=disabled]:hover{
+	color:#877E65 !important;
+}
+
+.metabs2 .division{
+padding: 0px;
+	margin: 0px;
+	background: #fff;
+	display: table;
+	width: 100%;
+	overflow: hidden ;
+	/*border:1px solid #999;*/
+	border-radius: 4px ;	
+}
+.metabs2 .division > div{
+	display: table-cell;
+	vertical-align: top;
+	
+}.metabs2 .division > div.division_tabs{		
+/*}.metabs2 .division > div:first-child{	*/
+
+	/*box-shadow: 2px 0 20px 0px rgba(0,0,0,0.7);*/
+	width: 10%;
+	/*border-right: 1px solid #999;*/
+	background: #fff;
+	height: 100%;
+/*}.metabs2 .division > div:last-child{	*/
+}.metabs2 .division > div.division_content{		
+	
+	overflow:hidden;
+	padding: 0px;
+	margin-left: 5px;
+	
+	border:0px solid #999;	
+	display: table;
+height: 274px;
+width: 258px;
+}.metabs2 .division > div.division_content  img{	
+	border:1px solid #999;	
+}
+
+
+
+.metabs_content{
+height:100%;
+background-size: cover !important;
+background-position: center !important;
+background-repeat: no-repeat !important;
+}
+
+
+
+.wrc-column-grid-3 .wrc-column-width-1 {
+    width: 35.3333%;
+}
+.wrc-column-grid-3 .wrc-column-width-2 {
+    width:  64.667%;
+}
+
+
+
+
+
+
+
+.metabs3{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	
+
+	
+}.metabs3  div[data-rel=tabContainer] {	
+	display: table;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}.metabs3  div > a[data-rel=metabs_tab] {
+	display: inline-table;
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+
+	
+	/*background: #eee ;*/
+	border: 0px ;
+	margin: 0px ;	
+	box-shadow:none ;
+	border-radius: 0px ;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	color:#AAAAAA;
+	text-decoration: none;
+
+}.metabs3  div > a[data-rel=metabs_tab]:first-child{
+	border-radius: 4px 0px 0px 0px;
+
+}.metabs3  div > a[data-rel=metabs_tab]:last-child{
+	border-radius: 0px 4px 0px 0px;	
+}.metabs3  div > a[data-rel=metabs_tab]:hover{
+	background: #F8F8F8;
+	color: #A1A1A1;
+
+}.metabs3  div > a[data-rel=metabs_tab][data-state=active] {
+	background: #F8F8F8;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color:#343481;
+	font-weight: bold
+}.metabs3 > [data-state=active] {		
+	display: block;
+}
+.metabs3  [data-rel="metabs_content"]{
+	padding: 0px;
+	display:none;
+}.metabs3  [data-rel='metabs_content'][data-state=active]{
+	display: table;
+	width: 100%
+}
+
+.metabs3  div > a[data-rel=metabs_tab][disabled=disabled]{
+	background: #E1DBC2 !important;
+	color:#877E65;
+}.metabs3  div > a[data-rel=metabs_tab][disabled=disabled]:hover{
+	color:#877E65 !important;
+}
+
+.metabs3 .division{
+padding: 0px;
+	margin: 0px;
+	/*background: #eee;*/
+	
+	width: 100%;
+	overflow: hidden ;
+	/*border:1px solid #FDB515;*/
+	border-radius: 4px 0px 0px 4px;	
+
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+.metabs3 .division > div{
+
+	
+}.metabs3 .division > div.division_tabs{	
+	/*box-shadow: 2px 0 20px 0px rgba(0,0,0,0.7);*/
+	/*display: table;*/
+	order:2;
+
+}.metabs3 .division > div.division_content{	
+	order:3;	
+	overflow:hidden;
+	padding: 5px;
+	margin: 0px;
+	
+}
+
+

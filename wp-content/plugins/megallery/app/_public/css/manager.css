@@ -1,0 +1,183 @@
+.megallery_wrapper{
+	background: #eee;
+	width: 98%;
+}.megallery_wrapper .megallery_content_title{
+	font-size: 17px;
+	padding: 0px;
+	margin:0px;
+	
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.megallery_wrapper .megallery_content_tool{
+	display: table;
+	width: 100%;
+	font-size: 17px;
+	padding: 0px;
+	margin:0px;
+	
+	border-bottom: 1px solid #ccc;
+}.megallery_wrapper .megallery_content_tool > ul {	
+	margin: 0px;
+}.megallery_wrapper .megallery_content_tool > ul > li{
+	display: inline-table;
+	padding: 0px;
+	margin:0px;
+}.megallery_wrapper .megallery_content_tool > ul > li > a{	
+	display: table;
+	padding: 0px;
+		
+	padding: 5px;
+	padding-left: 28px;
+	position: relative;
+	text-decoration: none;
+	font-size: 15px;
+	color:#888;
+	cursor: pointer;
+}.megallery_wrapper .megallery_content_tool > ul > li > a:hover{		
+	background: #eee;
+	color:#02A1D2;
+}
+
+a[data-icon="add"]:before{		
+	content: url(../img/add.png);
+	position: absolute;
+	top: 2px;
+	margin-left: -25px;
+}
+a[data-icon="del"]:before{		
+	content: url(../img/del.png);
+	position: absolute;
+	top: 2px;
+	margin-left: -25px;
+}
+
+
+.megallery_item{
+	padding: 5px;
+	margin:3px;
+	
+	cursor: pointer;
+	border:1px solid #ccc;
+
+	/*width: 155px;*/
+height: 133px;
+background-size: contain !important;
+background-repeat: no-repeat !important;
+background-position: 50% !important;
+position: relative;
+}.megallery_item:hover{
+	border:1px solid #7DAEDD;
+}.megallery_item > div.info{
+position: absolute;
+top:0px;
+left:0px;
+padding: 5px;
+background: #eee;
+color:#444;
+z-index: 100;
+/*visibility: hidden;*/
+}.megallery_item:hover > div.info{
+	/*visibility: visible;*/
+	background: #1EAAD6;
+color:#fff;
+
+}.megallery_item > div.legend{
+position: absolute;
+top:100%;
+left:0px;
+padding: 5px;
+background: #1EAAD6;
+color:#fff;
+z-index: 102;
+visibility: hidden;
+}.megallery_item:hover > div.legend{
+	visibility: visible;	
+}.megallery_item > div.control{
+position: absolute;
+bottom: 0px;
+left:0px;
+padding: 5px;
+background: #eee;
+color:#fff;
+z-index: 100;
+visibility: hidden;
+}.megallery_item > div.control a{
+	padding: 5px;
+	cursor: pointer;
+}.megallery_item:hover > div.control{
+	visibility: visible;
+}
+
+.megallery_info{
+	width: 95%;
+margin: auto;
+
+}
+
+.megallery_gallerycontent{
+		width: 95%;
+margin: auto;
+}
+
+.fixed{
+	position: fixed;
+}.absolute{
+	position: absolute;
+}
+.barForm{
+	
+	/*background: #fff;*/
+	margin-top: 15px;
+	padding:5px;
+	/*border:1px solid #ccc;*/
+	text-align: left;
+	/*box-shadow: 0px 0px 10px -5px #000;*/
+}
+
+
+.barFormSide{
+	
+	background: #fff;
+	margin-top: 15px;
+	padding:5px;
+	border:1px solid #ccc;
+	text-align: left;
+	box-shadow: 0px 0px 10px -5px #000;
+}
+
+
+.menuListGallery > ul > li{
+	overflow: hidden ;
+}
+.menuListGallery > ul > li > a{
+	display: table;
+	width: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+	border-bottom: 1px dotted #ccc;
+}.menuListGallery > ul > li > a:hover{	
+	background: #1EAAD6;
+	color:#fff;
+}.menuListGallery > ul > li > a[data-status="active"]{
+	background: #7FDCFA;
+}
+
+.btadd_item{
+	display: table;
+	padding:10px;
+	border:1px dotted #ccc;
+	cursor: pointer;
+}.btadd_item:hover{
+	padding:10px;
+	border:1px dotted red;
+}.btadd_item:active{
+	padding:10px;
+	border:1px dotted red;
+	background: #ccc;
+	box-shadow: 0px 0px 25px -15px #111 inset;
+}
