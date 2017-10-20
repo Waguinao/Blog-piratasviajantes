@@ -36,7 +36,22 @@ padding: 0px;
 	display: table !important;
 	width: 100%;
 	/*height: 58px;	*/
-	background: #1D5BA7;
+	background: #f02d3b;
+}
+.sidebar-col-2 .widget, .credit p, #menu-secondary{
+	background: #f02d3b !important;	
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link{
+	color: #f02d3b !important;		
+}#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover{
+	color: #fab230 !important;		
+}a:hover, .epc-s1 a:hover, .epc-s2 a:hover, .epc-s3 a:hover, .epc-s4 a:hover, .epc-s5 a:hover, .epc-s6 a:hover, .epc-s7 a:hover, .epc-s8 a:hover, .epc-s9 a:hover{
+	color: #fab230 ;		
+	text-decoration: none !important;
+}.epc-ovr #page #sidebar-primary .widget_epico_pop-id h3[class*="title"]:before, .epc-ovr #page #sidebar-primary .widget_epico_pop-id li:hover:before, .epc-ovr #page #sidebar-primary section[class*="epico_pages"] h3[class*="title"]:before, .epc-ovr #main-container a, .epc-ovr.plural .format-default .entry-author, .epc-ovr #breadcrumbs a, .epc-ovr #branding a, .epc-ovr #header #nav a:hover, .epc-ovr #footer .widget_tag_cloud a:hover:before, .epc-ovr #zen.zen-active:hover i, .epc-ovr.page-template-landing #footer a, .epc-ovr #main-container #sidebar-primary .widget_epico_pop-id a{
+	color: #f02d3b ;
+}.epc-ovr .wp-calendar > caption, .epc-ovr input[type="submit"], .epc-ovr #nav input.search-submit[type="submit"], .epc-ovr .not-found input.search-submit[type="submit"], .epc-ovr.zen #sidebar-after-content .sb.capture-wrap form .uf-submit, .epc-ovr .pagination .page-numbers.current{
+	background: #f02d3b !important;
 }
 
 .social2{
@@ -296,10 +311,11 @@ input#author, input#email, input#url {
 	font-weight: 300 !important;
 	font-style: normal !important;
 	text-transform: uppercase !important;
-	color: #585dd2 !important;
-	margin-left: 10px;
-	margin-right: 35px;
-	display: table-cell;
+	color: #f02d3b !important;
+	/*margin-left: 10px;*/
+	/*margin-right: 35px;*/
+	margin: auto;
+    display: table;
     padding-left: 10px;
     margin-bottom: -4px;
 }
@@ -569,7 +585,7 @@ footer #credits-novo h3 {
 		width: 55px;
 		height: 50px;
 		overflow: hidden;
-		color: #1D5BA7 !important;
+		color: #f02d3b !important;
 
 		-webkit-transform:  rotateY(0deg) ;
 		transform:  rotateY(0deg) ;
@@ -760,10 +776,10 @@ footer #credits-novo h3 {
 .megallery_item:hover{
 	border: 1px solid #0470BE !important;
 }.megallery_item > .legend{
-	background: #1D5BA7 !important;
+	background: #f02d3b !important;
 	color: #fff !important;
 }.megallery_item > .legend::before{
-	background: #1D5BA7 !important;
+	background: #f02d3b !important;
 }.megallery_item > .legend:hover{
 	background: #17457E !important;
 }.megallery_item_box {

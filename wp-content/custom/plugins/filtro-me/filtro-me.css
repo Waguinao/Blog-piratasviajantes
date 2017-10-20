@@ -185,7 +185,7 @@
 }
 
 [data-design-table] tr:first-child{
-	background: #2A89D3 !important;   
+	background: #f02d3b !important;   
     color: #fff;
 }
 [data-design-table-header] tr:first-child{	
