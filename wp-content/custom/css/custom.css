@@ -54,6 +54,11 @@ padding: 0px;
 	background: #f02d3b !important;
 }
 
+
+.epc-s9 a, .epc-s9 #footer .widget_tag_cloud a:hover:before{
+	color: #f02d3b ;
+}
+
 .social2{
 	display: table;
 	width: 100%;
@@ -114,6 +119,10 @@ padding: 0px;
 	display: inline-table;
 }#menu-menupromocional li a{	
 	display: table;
+	color: #fff;
+}#menu-menupromocional li a:hover{	
+	display: table;
+	color: #fab230;
 }
 
 .topo{
